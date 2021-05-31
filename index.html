@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard — художественная галерея</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top header__container">
+      <a class="logo header__logo">
+        <img src="img/logo.svg" alt="Логотип компании Бланчард">
+      </a>
+      <nav class="nav header__nav-top">
+        <ul class="nav__list-top list-reset">
+          <li class="nav__item-top"><a href="#" class="nav__link-top">О&nbsp;нас</a></li>
+          <li class="nav__item-top"><a href="#" class="nav__link-top">Галерея</a></li>
+          <li class="nav__item-top"><a href="#" class="nav__link-top">Каталог</a></li>
+          <li class="nav__item-top"><a href="#" class="nav__link-top">События</a></li>
+          <li class="nav__item-top"><a href="#" class="nav__link-top">Издания</a></li>
+          <li class="nav__item-top"><a href="#" class="nav__link-top">Проекты</a></li>
+          <li class="nav__item-top"><a href="#" class="nav__link-top">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__btn" role="button" aria-label="Кнопка входа">
+        <a href="#" class="header__btn-entrance">
+          <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.12 9.093L6.14 10.11 9.75 6.5 6.139 2.889 5.12 3.907l1.863 1.87H0v1.445h6.984L5.12 9.092zM11.557 0H1.444C.643 0 0 .65 0 1.444v2.89h1.444v-2.89h10.112v10.112H1.444v-2.89H0v2.89C0 12.35.643 13 1.444 13h10.112C12.35 13 13 12.35 13 11.556V1.444C13 .65 12.35 0 11.556 0z"
+              fill="#fff" /></svg>
+          Войти
+        </a>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class=" header__nav-bottom">
+        <nav class="nav__list-bottom">
+          <div class="nav__item-select-1">
+            <select class="scroll select-1">
+              <option>Реализм</option>
+              <option>Тинторетто</option>
+              <option>Фридрих</option>
+              <option>Леонардо</option>
+              <option>Верроккьо</option>
+            </select>
+          </div>
+          <div class="nav__item-select-2">
+            <select class="select-2">
+              <option>Импрессионизм</option>
+              <option>Моне</option>
+              <option>Сислей</option>
+              <option>Мане</option>
+              <option>Ренуар</option>
+            </select>
+          </div>
+          <div class="nav__item-select-3">
+            <select class="select-3">
+              <option>Постимпрессионизм</option>
+              <option>Ван Гогм</option>
+              <option>Сезанн</option>
+              <option>Гоген</option>
+              <option>Сёра</option>
+            </select>
+          </div>
+          <div class="nav__item-select-4">
+            <select class="select-4">
+              <option>Авангард</option>
+              <option>Кандинский</option>
+              <option>Маринетти</option>
+              <option>Малевич</option>
+              <option>Пикассо</option>
+            </select>
+          </div>
+          <div class="nav__item-select-5">
+            <select class="select-5">
+              <option>Футуризм</option>
+              <option>Карра</option>
+              <option>Прателла</option>
+              <option>Северини</option>
+              <option>Балла</option>
+            </select>
+          </div>
+        </nav>
+        <div class="header__search">
+          <a href="#" class="header-search__link">
+            <svg class="header-search__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M4.938 15.653L0 20.427l1.234 1.194 4.938-4.774z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.097 18c-4.567 0-8.1-3.677-8.1-8s3.533-8 8.1-8c4.566 0 8.1 3.677 8.1 8s-3.534 8-8.1 8zm0 2c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10z" fill="#fff"/></svg>
+          </a>
+            <input class="header-search__input input__reset" placeholder="Поиск по&nbsp;сайту">
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- main : hero -->
+
+  <main>
+    <section class="hero swiper-container">
+      <h1 class="hero__title">
+        Прикоснитесь к&nbsp;прекрасному
+      </h1>
+      <p class="hero__descr">
+        Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для
+        новых предложений.
+      </p>
+      <a href="#" class="hero__btn">Подписаться на&nbsp;рассылку</a>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider-1"></div>
+        <div class="swiper-slide slider-2"></div>
+        <div class="swiper-slide slider-3"></div>
+      </div>
+    </section>
+
+    <!-- about -->
+
+    <section class="about">
+      <div class="about__us container">
+        <h2 class="about__title">
+          О&nbsp;нас
+        </h2>
+        <p class="about__text">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+          участника как способного принимать собственные решения касаемо распределения внутренних резервов
+          и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет
+          за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
+          высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого
+          ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов.
+          В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
+          среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/choices.js"></script>
+</body>
+
+</html>
