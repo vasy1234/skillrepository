@@ -378,7 +378,6 @@ body {
 .choices__list--dropdown {
   overflow: hidden;
   overflow-y: scroll;
-  scrollbar-width: inherit;
   max-width: none;
 }
 
