@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/choices.min.css" type="text/css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
           <li class="nav__item-top"><a href="#" class="nav__link-top">Контакты</a></li>
         </ul>
       </nav>
-      <div class="header__btn" role="button" aria-label="Кнопка входа">
+      <div class="header__btn">
         <a href="#" class="header__btn-entrance">
           <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -45,57 +46,62 @@
     <div class="header__bottom">
       <div class=" header__nav-bottom">
         <nav class="nav__list-bottom">
-          <div class="nav__item-select-1">
-            <select class="scroll select-1">
-              <option>Реализм</option>
-              <option>Тинторетто</option>
-              <option>Фридрих</option>
-              <option>Леонардо</option>
-              <option>Верроккьо</option>
-            </select>
+          <div class="dropdown nav__item-select-1">
+            <button onclick="myFunction()" class="dropbtn select-1">Реализм</button>
+            <ul id="myDropdown-1" class="dropdown-content scroll" data-simplebar>
+              <li class="header__nav-bottom-link header__nav-bottom-image-1">Тинторетто</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-2">Фридрих</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-3">Леонардо</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-4">Верроккьо</li>
+            </ul>
           </div>
-          <div class="nav__item-select-2">
-            <select class="select-2">
-              <option>Импрессионизм</option>
-              <option>Моне</option>
-              <option>Сислей</option>
-              <option>Мане</option>
-              <option>Ренуар</option>
-            </select>
+          <div class="dropdown nav__item-select-2">
+            <button onclick="myFunction2()" class="dropbtn select-2">Импрессионизм</button>
+            <ul id="myDropdown2" class="dropdown-content scroll" data-simplebar>
+              <li class="header__nav-bottom-link header__nav-bottom-image-5">Моне</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-6">Сислей</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-7">Мане</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-8">Ренуар</li>
+            </ul>
           </div>
-          <div class="nav__item-select-3">
-            <select class="select-3">
-              <option>Постимпрессионизм</option>
-              <option>Ван Гогм</option>
-              <option>Сезанн</option>
-              <option>Гоген</option>
-              <option>Сёра</option>
-            </select>
+          <div class="dropdown nav__item-select-3">
+            <button onclick="myFunction3()" class="dropbtn select-3">Постимпрессионизм</button>
+            <ul id="myDropdown3" class="dropdown-content scroll" data-simplebar>
+              <li class="header__nav-bottom-link header__nav-bottom-image-9">Ван Гог</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-10">Сезанн</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-11">Гоген</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-12">Сёра</li>
+            </ul>
           </div>
-          <div class="nav__item-select-4">
-            <select class="select-4">
-              <option>Авангард</option>
-              <option>Кандинский</option>
-              <option>Маринетти</option>
-              <option>Малевич</option>
-              <option>Пикассо</option>
-            </select>
+          <div class="dropdown nav__item-select-4">
+            <button onclick="myFunction4()" class="dropbtn select-4">Авангард</button>
+            <ul id="myDropdown4" class="dropdown-content scroll" data-simplebar>
+              <li class="header__nav-bottom-link header__nav-bottom-image-13">Кандинский</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-14">Маринетти</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-15">Малевич</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-16">Пикассо</li>
+            </ul>
           </div>
-          <div class="nav__item-select-5">
-            <select class="select-5">
-              <option>Футуризм</option>
-              <option>Карра</option>
-              <option>Прателла</option>
-              <option>Северини</option>
-              <option>Балла</option>
-            </select>
+          <div class="dropdown nav__item-select-5">
+            <button onclick="myFunction5()" class="dropbtn select-5">Футуризм</button>
+            <ul id="myDropdown5" class="dropdown-content scroll" data-simplebar>
+              <li class="header__nav-bottom-link header__nav-bottom-image-17">Карра</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-18">Прателла</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-19">Северини</li>
+              <li class="header__nav-bottom-link header__nav-bottom-image-20">Балла</li>
+            </ul>
           </div>
+
         </nav>
         <div class="header__search">
           <a href="#" class="header-search__link">
-            <svg class="header-search__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M4.938 15.653L0 20.427l1.234 1.194 4.938-4.774z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.097 18c-4.567 0-8.1-3.677-8.1-8s3.533-8 8.1-8c4.566 0 8.1 3.677 8.1 8s-3.534 8-8.1 8zm0 2c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10z" fill="#fff"/></svg>
+            <svg class="header-search__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#fff" d="M4.938 15.653L0 20.427l1.234 1.194 4.938-4.774z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.097 18c-4.567 0-8.1-3.677-8.1-8s3.533-8 8.1-8c4.566 0 8.1 3.677 8.1 8s-3.534 8-8.1 8zm0 2c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10z"
+                fill="#fff" /></svg>
           </a>
-            <input class="header-search__input input__reset" placeholder="Поиск по&nbsp;сайту">
+          <input class="header-search__input input__reset" placeholder="Поиск по&nbsp;сайту">
         </div>
       </div>
 
@@ -144,10 +150,10 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-  <script src="js/choices.min.js"></script>
+  <!-- <script src="js/choices.min.js"></script> -->
   <script src="js/swiper.js"></script>
-  <script src="js/choices.js"></script>
-</body>
+  <script src="js/dropdown.js"></script>
+  <!-- <script src="js/choices.js"></script>
+</body> -->
 
 </html>
