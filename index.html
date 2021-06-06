@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/choices.min.css" type="text/css">
+  <!-- <link rel="stylesheet" href="css/choices.min.css" type="text/css"> -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
@@ -18,33 +18,35 @@
 
 <body>
   <header class="header">
-    <div class="header__top header__container">
-      <a class="logo header__logo">
-        <img src="img/logo.svg" alt="Логотип компании Бланчард">
-      </a>
-      <nav class="nav header__nav-top">
-        <ul class="nav__list-top list-reset">
-          <li class="nav__item-top"><a href="#" class="nav__link-top">О&nbsp;нас</a></li>
-          <li class="nav__item-top"><a href="#" class="nav__link-top">Галерея</a></li>
-          <li class="nav__item-top"><a href="#" class="nav__link-top">Каталог</a></li>
-          <li class="nav__item-top"><a href="#" class="nav__link-top">События</a></li>
-          <li class="nav__item-top"><a href="#" class="nav__link-top">Издания</a></li>
-          <li class="nav__item-top"><a href="#" class="nav__link-top">Проекты</a></li>
-          <li class="nav__item-top"><a href="#" class="nav__link-top">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="header__btn">
-        <a href="#" class="header__btn-entrance">
-          <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M5.12 9.093L6.14 10.11 9.75 6.5 6.139 2.889 5.12 3.907l1.863 1.87H0v1.445h6.984L5.12 9.092zM11.557 0H1.444C.643 0 0 .65 0 1.444v2.89h1.444v-2.89h10.112v10.112H1.444v-2.89H0v2.89C0 12.35.643 13 1.444 13h10.112C12.35 13 13 12.35 13 11.556V1.444C13 .65 12.35 0 11.556 0z"
-              fill="#fff" /></svg>
-          Войти
+    <div class="header__top">
+      <div class="header__container container">
+        <a href="#" class="logo header__logo">
+          <img src="img/logo.svg" alt="Логотип компании Бланчард">
         </a>
+        <nav class="nav header__nav-top">
+          <ul class="nav__list-top list-reset">
+            <li class="nav__item-top"><a href="#" class="nav__link-top">О&nbsp;нас</a></li>
+            <li class="nav__item-top"><a href="#" class="nav__link-top">Галерея</a></li>
+            <li class="nav__item-top"><a href="#" class="nav__link-top">Каталог</a></li>
+            <li class="nav__item-top"><a href="#" class="nav__link-top">События</a></li>
+            <li class="nav__item-top"><a href="#" class="nav__link-top">Издания</a></li>
+            <li class="nav__item-top"><a href="#" class="nav__link-top">Проекты</a></li>
+            <li class="nav__item-top"><a href="#" class="nav__link-top">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__btn">
+          <a href="#" class="header__btn-entrance">
+            <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.12 9.093L6.14 10.11 9.75 6.5 6.139 2.889 5.12 3.907l1.863 1.87H0v1.445h6.984L5.12 9.092zM11.557 0H1.444C.643 0 0 .65 0 1.444v2.89h1.444v-2.89h10.112v10.112H1.444v-2.89H0v2.89C0 12.35.643 13 1.444 13h10.112C12.35 13 13 12.35 13 11.556V1.444C13 .65 12.35 0 11.556 0z"
+                fill="#fff" /></svg>
+            Войти
+          </a>
+        </div>
       </div>
     </div>
     <div class="header__bottom">
-      <div class=" header__nav-bottom">
+      <div class=" header__nav-bottom container">
         <nav class="nav__list-bottom">
           <div class="dropdown nav__item-select-1">
             <button onclick="myFunction()" class="dropbtn select-1">Реализм</button>
@@ -130,7 +132,7 @@
     <!-- about -->
 
     <section class="about">
-      <div class="about__us container">
+      <div class="about__us">
         <h2 class="about__title">
           О&nbsp;нас
         </h2>
@@ -139,7 +141,7 @@
           участника как способного принимать собственные решения касаемо распределения внутренних резервов
           и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет
           за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
-          высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого
+          высокое качество позиционных исследований создаёт необходимость включения в &nbsp;производственный план целого
           ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов.
           В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
           среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
@@ -148,12 +150,12 @@
     </section>
   </main>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
   <!-- <script src="js/choices.min.js"></script> -->
   <script src="js/swiper.js"></script>
   <script src="js/dropdown.js"></script>
-  <!-- <script src="js/choices.js"></script>
-</body> -->
+  <!-- <script src="js/choices.js"></script> -->
+</body>
 
 </html>

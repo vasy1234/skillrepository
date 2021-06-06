@@ -1,15 +1,15 @@
 const swiper = new Swiper('.swiper-container', {
-  speed: 500,
+  speed: 1000,
   loop: true,
   setInitialSlide: 0,
   spaceBetween: 0,
 });
-// var mySwiper = document.querySelector('.swiper-container').swiper
+var mySwiper = document.querySelector('.swiper-container').swiper
 
-// mySwiper.slideNext();
+mySwiper.slideNext();
 
-// var mySwiper = new Swiper('.swiper-container', {
-//   autoplay: {
-//     delay: 1000,
-//   },
-// });
+var mySwiper = new Swiper('.swiper-container', {
+  autoplay: {
+    delay: 11000,
+  },
+});
