@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard — художественная галерея</title>
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         </button>
         <a class="logo header__logo">
           <picture>
-            <source srcset="img/logo-187.png">
+            <source srcset="img/logo-187.png" media="(max-width: 1920px)">
             <img src="img/logo-173.png" alt="Логотип компании Бланчард">
           </picture>
         </a>
@@ -52,8 +53,9 @@
       <div class=" header__nav-bottom container">
         <nav class="nav__list-bottom">
           <div class="dropdown nav__item-select-1" role="button" aria-label="Кнопка реализм" tabindex="0">
-            <h4 onclick="myFunction()" class="dropbtn select-1">Реализм
+            <h4 onclick="myFunction()" class="dropbtn select-1">Реализм<span class="arrow arrow-1"></span>
             </h4>
+            
             <ul id="myDropdown-1" class="dropdown-content scroll" data-simplebar>
               <li class="nav__bottom-link nav__bottom-image-1">Тинторетто</li>
               <li class="nav__bottom-link nav__bottom-image-2">Фридрих</li>
@@ -62,7 +64,7 @@
             </ul>
           </div>
           <div class="dropdown nav__item-select-2" role="button" aria-label="Кнопка Импрессионизм" tabindex="0">
-            <h4 onclick="myFunction2()" class="dropbtn select-2">Импрессионизм</h4>
+            <h4 onclick="myFunction2()" class="dropbtn select-2">Импрессионизм<span class="arrow arrow-2"></span></h4>
             <ul id="myDropdown2" class="dropdown-content scroll" data-simplebar>
               <li class="nav__bottom-link nav__bottom-image-5">Моне</li>
               <li class="nav__bottom-link nav__bottom-image-6">Сислей</li>
@@ -71,7 +73,7 @@
             </ul>
           </div>
           <div class="dropdown nav__item-select-3" role="button" aria-label="Кнопка Постимпрессионизм" tabindex="0">
-            <h4 onclick="myFunction3()" class="dropbtn select-3">Постимпрессионизм</h4>
+            <h4 onclick="myFunction3()" class="dropbtn select-3">Постимпрессионизм<span class="arrow arrow-3"></span></h4>
             <ul id="myDropdown3" class="dropdown-content scroll" data-simplebar>
               <li class="nav__bottom-link nav__bottom-image-9">Ван Гог</li>
               <li class="nav__bottom-link nav__bottom-image-10">Сезанн</li>
@@ -80,7 +82,7 @@
             </ul>
           </div>
           <div class="dropdown nav__item-select-4" role="button" aria-label="Кнопка Авангард" tabindex="0">
-            <h4 onclick="myFunction4()" class="dropbtn select-4">Авангард</h4>
+            <h4 onclick="myFunction4()" class="dropbtn select-4">Авангард<span class="arrow arrow-4"></span></h4>
             <ul id="myDropdown4" class="dropdown-content scroll" data-simplebar>
               <li class="nav__bottom-link nav__bottom-image-13">Кандинский</li>
               <li class="nav__bottom-link nav__bottom-image-14">Маринетти</li>
@@ -89,7 +91,7 @@
             </ul>
           </div>
           <div class="dropdown nav__item-select-5" role="button" aria-label="Кнопка Футуризм" tabindex="0">
-            <h4 onclick="myFunction5()" class="dropbtn select-5">Футуризм</h4>
+            <h4 onclick="myFunction5()" class="dropbtn select-5">Футуризм<span class="arrow arrow-5"></span></h4>
             <ul id="myDropdown5" class="dropdown-content scroll" data-simplebar>
               <li class="nav__bottom-link nav__bottom-image-17">Карра</li>
               <li class="nav__bottom-link nav__bottom-image-18">Прателла</li>
@@ -97,10 +99,9 @@
               <li class="nav__bottom-link nav__bottom-image-20">Балла</li>
             </ul>
           </div>
-
         </nav>
         <div class="header__search">
-          <a href="#" class="header-search__link">
+          <a href="#" id="header-search__link" class="header-search__link">
             <picture>
               <source srcset="img/Search-29.svg">
               <img src="img/Search-29.svg" alt="Кнопка поиск">
@@ -110,24 +111,48 @@
         </div>
       </div>
     </div>
+    <div class="search-up">
+      <div class="search-container">
+        <div class="header-search">
+          <a href="#" class="header-search__link">
+            <picture>
+              <source srcset="img/Search-29.svg">
+              <img src="img/Search-29.svg" alt="Кнопка поиск">
+            </picture>
+          </a>
+          <input class="search__input input__reset" placeholder="&nbsp;">
+          <a href="#" id="close">
+            <picture>
+              <source srcset="img/X.svg">
+              <img src="img/X.svg" alt="Кнопка закрыть поиск">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- main : hero -->
 
   <main>
-    <section class="hero swiper-container">
-      <h1 class="hero__title">
-        Прикоснитесь к&nbsp;прекрасному
-      </h1>
-      <p class="hero__descr">
-        Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для
-        новых предложений.
-      </p>
-      <a href="#" class="hero__btn">Подписаться на&nbsp;рассылку</a>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slider-1"></div>
-        <div class="swiper-slide slider-2"></div>
-        <div class="swiper-slide slider-3"></div>
+    <section class="hero">
+      <div class="swiper-container">
+        <div class="hero__container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slider-1">
+              <h1 class="hero__title">
+                Прикоснитесь к&nbsp;прекрасному
+              </h1>
+              <p class="hero__descr">
+                Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
+                предпосылки для
+                новых предложений.
+              </p>
+              <a href="#" class="hero__btn" role="button" aria-label="Подписаться на рассылку">Подписаться
+                на&nbsp;рассылку</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -135,26 +160,95 @@
 
     <section class="about">
       <div class="about__us">
-        <h2 class="about__title">
-          О&nbsp;нас
-        </h2>
-        <p class="about__text">
-          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
-          участника как способного принимать собственные решения касаемо распределения внутренних резервов
-          и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет
-          за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
-          высокое качество позиционных исследований создаёт необходимость включения в &nbsp;производственный план целого
-          ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов.
-          В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
-          среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
-        </p>
+        <div class="container">
+          <h2 class="about__title">
+            О&nbsp;нас
+          </h2>
+          <p class="about__text">
+            Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+            участника как способного принимать собственные решения касаемо распределения внутренних резервов
+            и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет
+            за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
+            высокое качество позиционных исследований создаёт необходимость включения в &nbsp;производственный план
+            целого
+            ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов.
+            В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
+            среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container flex-container">
+        <div class="gallery__accordion">
+          <div class="gallery__up-box">
+            <h2 class="gallery__title">Галерея</h2>
+            <span class="gallery__subtitle">Фильтры:</span>
+            <h4 class="gallery__acc-title">Живопись</h4>
+            <div class="gallery__img"></div>
+          </div>
+          <p class="gallery__decr">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#"
+              class="">авторизуйтесь</a> , либо
+            воспользуйтесь лицензией.
+          </p>
+        </div>
+        <div class="gallery__sw">
+          <div class="new__swaper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gallery__swaper">
+                <ul class="gallery__slider-new list-reset flex-container">
+                  <li><img src="img/gl-slide-1.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-2.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-3.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-4.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-5.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-6.webp" alt="Изоброжение слайдера"></li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="gallery__slider-new list-reset flex-container">
+                  <li><img src="img/gl-slide-1.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-2.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-3.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-4.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-5.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-6.webp" alt="Изоброжение слайдера"></li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="gallery__slider-new list-reset flex-container">
+                  <li><img src="img/gl-slide-1.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-2.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-3.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-4.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-5.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-6.webp" alt="Изоброжение слайдера"></li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="gallery__slider-new list-reset flex-container">
+                  <li><img src="img/gl-slide-1.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-2.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-3.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-4.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-5.webp" alt="Изоброжение слайдера"></li>
+                  <li><img src="img/gl-slide-6.webp" alt="Изоброжение слайдера"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/search--up.js"></script>
+  <script src="js/open-search.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,27 @@
+  document.querySelector(".select-1")
+  .addEventListener("click", function(){
+    document.querySelector(".arrow-1").classList.toggle("is-active")
+  })
+
+  document.querySelector(".select-2")
+  .addEventListener("click", function(){
+    document.querySelector(".arrow-2").classList.toggle("is-active")
+  })
+
+  document.querySelector(".select-3")
+  .addEventListener("click", function(){
+    document.querySelector(".arrow-3").classList.toggle("is-active")
+  })
+
+  document.querySelector(".select-4")
+  .addEventListener("click", function(){
+    document.querySelector(".arrow-4").classList.toggle("is-active")
+  })
+
+  document.querySelector(".select-5")
+  .addEventListener("click", function(){
+    document.querySelector(".arrow-5").classList.toggle("is-active")
+  })
 
   function myFunction() {
     document.getElementById("myDropdown-1").classList.toggle("show");
