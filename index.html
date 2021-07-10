@@ -8,7 +8,6 @@
   <title>Blanchard — художественная галерея</title>
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -43,7 +42,8 @@
             <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.12 9.093L6.14 10.11 9.75 6.5 6.139 2.889 5.12 3.907l1.863 1.87H0v1.445h6.984L5.12 9.092zM11.557 0H1.444C.643 0 0 .65 0 1.444v2.89h1.444v-2.89h10.112v10.112H1.444v-2.89H0v2.89C0 12.35.643 13 1.444 13h10.112C12.35 13 13 12.35 13 11.556V1.444C13 .65 12.35 0 11.556 0z"
-                fill="#fff" /></svg>
+                fill="#fff" />
+            </svg>
             Войти
           </a>
         </div>
@@ -53,18 +53,16 @@
       <div class=" header__nav-bottom container">
         <nav class="nav__list-bottom">
           <div class="dropdown nav__item-select-1" role="button" aria-label="Кнопка реализм" tabindex="0">
-            <h4 onclick="myFunction()" class="dropbtn select-1">Реализм<span class="arrow arrow-1"></span>
-            </h4>
-
+            <h4 class="dropbtn select-1">Реализм<span class="arrow"></span></h4>
             <ul id="myDropdown-1" class="dropdown-content scroll" data-simplebar>
-              <li class="nav__bottom-link nav__bottom-image-1">Тинторетто</li>
+              <li class="nav__bottom-image-1 nav__bottom-link">Тинторетто</li>
               <li class="nav__bottom-link nav__bottom-image-2">Фридрих</li>
               <li class="nav__bottom-link nav__bottom-image-3">Леонардо</li>
               <li class="nav__bottom-link nav__bottom-image-4">Верроккьо</li>
             </ul>
           </div>
           <div class="dropdown nav__item-select-2" role="button" aria-label="Кнопка Импрессионизм" tabindex="0">
-            <h4 onclick="myFunction2()" class="dropbtn select-2">Импрессионизм<span class="arrow arrow-2"></span></h4>
+            <h4 class="dropbtn select-2">Импрессионизм<span class="arrow"></span></h4>
             <ul id="myDropdown2" class="dropdown-content scroll" data-simplebar>
               <li class="nav__bottom-link nav__bottom-image-5">Моне</li>
               <li class="nav__bottom-link nav__bottom-image-6">Сислей</li>
@@ -73,8 +71,7 @@
             </ul>
           </div>
           <div class="dropdown nav__item-select-3" role="button" aria-label="Кнопка Постимпрессионизм" tabindex="0">
-            <h4 onclick="myFunction3()" class="dropbtn select-3">Постимпрессионизм<span class="arrow arrow-3"></span>
-            </h4>
+            <h4 class="dropbtn select-3">Постимпрессионизм<span class="arrow"></span></h4>
             <ul id="myDropdown3" class="dropdown-content scroll" data-simplebar>
               <li class="nav__bottom-link nav__bottom-image-9">Ван Гог</li>
               <li class="nav__bottom-link nav__bottom-image-10">Сезанн</li>
@@ -83,7 +80,7 @@
             </ul>
           </div>
           <div class="dropdown nav__item-select-4" role="button" aria-label="Кнопка Авангард" tabindex="0">
-            <h4 onclick="myFunction4()" class="dropbtn select-4">Авангард<span class="arrow arrow-4"></span></h4>
+            <h4 class="dropbtn select-4">Авангард<span class="arrow"></span></h4>
             <ul id="myDropdown4" class="dropdown-content scroll" data-simplebar>
               <li class="nav__bottom-link nav__bottom-image-13">Кандинский</li>
               <li class="nav__bottom-link nav__bottom-image-14">Маринетти</li>
@@ -92,7 +89,7 @@
             </ul>
           </div>
           <div class="dropdown nav__item-select-5" role="button" aria-label="Кнопка Футуризм" tabindex="0">
-            <h4 onclick="myFunction5()" class="dropbtn select-5">Футуризм<span class="arrow arrow-5"></span></h4>
+            <h4 class="dropbtn select-5">Футуризм<span class="arrow"></span></h4>
             <ul id="myDropdown5" class="dropdown-content scroll" data-simplebar>
               <li class="nav__bottom-link nav__bottom-image-17">Карра</li>
               <li class="nav__bottom-link nav__bottom-image-18">Прателла</li>
@@ -112,35 +109,16 @@
         </div>
       </div>
     </div>
-    <div class="search-up">
-      <div class="search-container">
-        <div class="header-search">
-          <a href="#" class="header-search__link">
-            <picture>
-              <source srcset="img/Search-29.svg">
-              <img src="img/Search-29.svg" alt="Кнопка поиск">
-            </picture>
-          </a>
-          <input class="search__input input__reset" placeholder="&nbsp;">
-          <a href="#" id="close">
-            <picture>
-              <source srcset="img/X.svg">
-              <img src="img/X.svg" alt="Кнопка закрыть поиск">
-            </picture>
-          </a>
-        </div>
-      </div>
-    </div>
   </header>
 
   <!-- main : hero -->
 
   <main>
     <section class="hero">
-      <div class="swiper-container">
+      <div class="swiper-container hero__swiper">
         <div class="hero__container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide slider-1">
+            <div class="swiper-slide hero-slider">
               <h1 class="hero__title">
                 Прикоснитесь к&nbsp;прекрасному
               </h1>
@@ -179,66 +157,274 @@
         </div>
       </div>
     </section>
+
+    <!-- gallery -->
+
     <section class="gallery">
-      <div class="container flex-container">
-        <div class="gallery__accordion">
+      <div class="container gallery-container">
+        <div class="gallery__left">
           <div class="gallery__up-box">
             <h2 class="gallery__title">Галерея</h2>
-            <span class="gallery__subtitle">Фильтры:</span>
-            <h4 class="gallery__acc-title">Живопись</h4>
-            <div class="gallery__img"></div>
+            <h3 class="gallery__subtitle">Фильтр:</h3>
+            <h4 class="gallery__acc-title">Живопись<span class="arrow gallery-arrow"></span></h4>
           </div>
           <p class="gallery__decr">
             Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#"
-              class="">авторизуйтесь</a> , либо
+              class="gallery__link">авторизуйтесь</a> , либо
             воспользуйтесь лицензией.
           </p>
         </div>
+
+        <!-- gallery swiper -->
+
         <div class="gallery__sw">
-          <div class="new__pagination swiper-pagination"></div>
-          <div class="new__swaper">
+          <div class="swiper-container gswiper">
+            <div class="prev-wrapper">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="swiper-wrapper">
-              <div class="swiper-slide gallery__swaper">
-                <div class="slider-list">
-                  <img class="img-slide" src="img/gl-slide-1.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-2.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-3.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-4.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-5.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-6.webp" alt="Изоброжение слайдера">
-                </div>
+              <div class="gallery-slide  swiper-slide">
+                <img class="img-slide" src="img/gl-slide-23.webp" srcset="img/gl-slide-23.webp" alt="Картинка слайда">
               </div>
-              <div class="swiper-slide gallery__swaper">
-                <div class="slider-list">
-                  <img class="img-slide" src="img/gl-slide-1.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-2.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-3.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-4.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-5.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-6.webp" alt="Изоброжение слайдера">
-                </div>
+              <div class="gallery-slide  swiper-slide">
+                <img class="img-slide" src="img/gl-slide-21.webp" srcset="img/gl-slide-21.webp" alt="Картинка слайда">
               </div>
-              <div class="swiper-slide gallery__swaper">
-                <div class="slider-list">
-                  <img class="img-slide" src="img/gl-slide-1.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-2.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-3.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-4.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-5.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-6.webp" alt="Изоброжение слайдера">
-                </div>
+              <div class="gallery-slide  swiper-slide">
+                <img class="img-slide" src="img/gl-slide-24.webp" srcset="img/gl-slide-24.webp" alt="Картинка слайда">
               </div>
-              <div class="swiper-slide gallery__swaper">
-                <div class="slider-list">
-                  <img class="img-slide" src="img/gl-slide-1.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-2.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-3.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-4.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-5.webp" alt="Изоброжение слайдера">
-                  <img class="img-slide" src="img/gl-slide-6.webp" alt="Изоброжение слайдера">
-                </div>
+              <div class="gallery-slide  swiper-slide">
+                <img class="img-slide" src="img/gl-slide-1.webp" srcset="img/gl-slide-1.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-4.webp" srcset="img/gl-slide-4.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-2.webp" srcset="img/gl-slide-2.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-5.webp" srcset="img/gl-slide-5.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-3.webp" srcset="img/gl-slide-3.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-6.webp" srcset="img/gl-slide-6.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-7.webp" srcset="img/gl-slide-7.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-10.webp" srcset="img/gl-slide-10.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img src="img/gl-slide-8.webp" srcset="img/gl-slide-8.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-11.webp" srcset="img/gl-slide-11.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img src="img/gl-slide-9.webp" srcset="img/gl-slide-9.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-12.webp" srcset="img/gl-slide-12.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-13.webp" srcset="img/gl-slide-13.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-16.webp" srcset="img/gl-slide-16.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-14.webp" srcset="img/gl-slide-14.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-17.webp" srcset="img/gl-slide-17.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-15.webp" srcset="img/gl-slide-15.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-18.webp" srcset="img/gl-slide-18.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-25.webp" srcset="img/gl-slide-25.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-22.webp" srcset="img/gl-slide-22.webp" alt="Картинка слайда">
+              </div>
+              <div class="gallery-slide swiper-slide">
+                <img class="img-slide" src="img/gl-slide-20.webp" srcset="img/gl-slide-20.webp" alt="Картинка слайда">
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container container-catalog">
+        <div class="catalog__wrapper">
+          <h2 class="gatalog__title">Каталог</h2>
+          <ul class="catalog__list-tab list-reset">
+            <li class="catalog__item-tab">
+              <button class="catalog__link-tab btn-reset" data-path="one">
+                <img class="catalog__icon" src="img/catalog-link-1.webp" alt="Картинка выбора языка">
+              </button>
+            </li>
+            <li class="catalog__item-tab">
+              <button class="catalog__link-tab btn-reset" data-path="two">
+                <img class="catalog__icon" src="img/catalog-link-2.webp" alt="Картинка выбора языка">
+              </button>
+            </li>
+            <li class="catalog__item-tab">
+              <button class="catalog__link-tab btn-reset" data-path="three">
+                <img class="catalog__icon" src="img/catalog-link-3.webp" alt="Картинка выбора языка">
+              </button>
+            </li>
+            <li class="catalog__item-tab">
+              <button class="catalog__link-tab btn-reset" data-path="four">
+                <img class="catalog__icon" src="img/catalog-link-4.webp" alt="Картинка выбора языка">
+              </button>
+            </li>
+            <li class="catalog__item-tab">
+              <button class="catalog__link-tab btn-reset" data-path="five">
+                <img class="catalog__icon" src="img/catalog-link-5.webp" alt="Картинка выбора языка">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <p class="catalog__descr">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
+          лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей
+          день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
+        </p>
+        <div class="catalog__content">
+          <div class="catalog__left" data-target="one">
+            <img src="img/catalog-img-left.webp" alt="Изоброжение автора" class="catalog__left-img">
+            <h3 class="catalog__left-title">Доменико Гирландайо</h3>
+            <p class="catalog__left-descr">
+              <span class="catalog__left-data">
+                2&nbsp;июня 1448&nbsp;&mdash; 11&nbsp;января 1494.
+              </span><br>
+              Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+              продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+              в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло,
+              со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли
+              выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+            </p>
+          </div>
+          <div class="catalog__right">
+            <ul id="accordion" class="catalog__right-list">
+              <li class="catalog__right-item">
+                <div>
+                  <h3 class="catalog__right-title">C&nbsp;1400 по&nbsp;1499&nbsp;гг.</h3>
+                  <span class="button-accordion" role="button"></span>
+                </div>
+                <div class="catalog__list-wrapper">
+                  <ul class="list-reset catalog__list-right">
+                    <li class="catalog__item-right">
+                      <ul class="list-reset">
+                        <li><a class="catalog__link-right">Бенедетто ди Биндо</a></li>
+                        <li><a class="catalog__link-right">Бергоньоне, Амброджо</a></li>
+                        <li><a class="catalog__link-right">Биссоло, Франческо</a></li>
+                        <li><a class="catalog__link-right">Больтраффио, Джованни</a></li>
+                        <li><a class="catalog__link-right">Бонсиньори, Франческо</a></li>
+                        <li><a class="catalog__link-right">Боттичини, Рафаэлло</a></li>
+                        <li><a class="catalog__link-right">Брамантино&nbsp;</a></li>
+                        <li><a class="catalog__link-right">Бреа, Людовико</a></li>
+                        <li><a class="catalog__link-right">Бьяджо д’Антонио Туччи</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog__item-right">
+                      <ul class="list-reset">
+                        <li><a class="catalog__link-right">Веккьетта</a></li>
+                        <li><a class="catalog__link-right">Андреа Верроккьо</a></li>
+                        <li><a class="catalog__link-right">Доменико Гирландайо</a></li>
+                        <li><a class="catalog__link-right">Беноццо Гоццоли</a></li>
+                        <li><a class="catalog__link-right">Граначчи, Франческо</a></li>
+                        <li><a class="catalog__link-right">Грегорио ди Чекко</a></li>
+                        <li><a class="catalog__link-right">Джованни да Удине</a></li>
+                        <li><a class="catalog__link-right">Джованни ди Паоло</a></li>
+                        <li><a class="catalog__link-right">Джорджоне</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog__item-right">
+                      <ul class="list-reset">
+                        <li><a class="catalog__link-right">Парентино, Бернардо</a></li>
+                        <li><a class="catalog__link-right">Пезеллино</a></li>
+                        <li><a class="catalog__link-right">Пьетро Перуджино</a></li>
+                        <li><a class="catalog__link-right">Перуцци, Бальдассаре</a></li>
+                        <li><a class="catalog__link-right">Пизанелло</a></li>
+                        <li><a class="catalog__link-right">Пинтуриккьо</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__right-item">
+                <div>
+                  <h3 class="catalog__right-title">C&nbsp;1500 по&nbsp;1599&nbsp;гг.</h3>
+                  <span class="button-accordion" role="button"></span>
+                </div>
+                <div class="catalog__right-wrapper">
+                  <img src="img/none.webp" alt="Пустая картинка">
+                  <div class="catalog__right-descr">
+                    <h4 class="catalog__right-subtitle">Здесь пока пусто</h4>
+                    <p class="catalog__right-text">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для
+                      <a href="#" class="catalog__right-link">В&nbsp;галерею</a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__right-item">
+                <div>
+                  <h3 class="catalog__right-title">C&nbsp;1600 по&nbsp;1699&nbsp;гг.</h3>
+                  <span class="button-accordion" role="button"></span>
+                </div>
+                <p class="catalog__right-descr">
+                  Здесь пока пусто
+                </p>
+              </li>
+              <li class="catalog__right-item">
+                <div>
+                  <h3 class="catalog__right-title">C&nbsp;1700 по&nbsp;1799&nbsp;гг.</h3>
+                  <span class="button-accordion" role="button"></span>
+                </div>
+                <p class="catalog__right-descr">
+                  Здесь пока пусто
+                </p>
+              </li>
+              <li class="catalog__right-item">
+                <div>
+                  <h3 class="catalog__right-title">C&nbsp;1800 по&nbsp;1899&nbsp;гг.</h3>
+                  <span class="button-accordion" role="button"></span>
+                </div>
+                <p class="catalog__right-descr">
+                  Здесь пока пусто
+                </p>
+              </li>
+              <li class="catalog__right-item">
+                <div>
+                  <h3 class="catalog__right-title">C&nbsp;1900 по&nbsp;1999&nbsp;гг.</h3>
+                  <span class="button-accordion" role="button"></span>
+                </div>
+                <p class="catalog__right-descr">
+                  Здесь пока пусто
+                </p>
+              </li>
+              <li class="catalog__right-item">
+                <div>
+                  <h3 class="catalog__right-title">C&nbsp;2000&nbsp;г.</h3>
+                  <span class="button-accordion" role="button"></span>
+                </div>
+                <p class="catalog__right-descr">
+                  Здесь пока пусто
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -246,12 +432,15 @@
   </main>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- <script src="js/swiper.js"></script> -->
-  <script src="js/dropdown.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/swiper-hero.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/search--up.js"></script>
-  <script src="js/open-search.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/swiper-gellary.js"></script>
+  <script src="js/accordion-catalog.js"></script>
+  <script src="js/gallery-tabs.js"></script>
 </body>
 
 </html>
