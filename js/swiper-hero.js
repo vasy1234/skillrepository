@@ -1,4 +1,4 @@
-// const swiper = new Swiper('.swiper-container.hero__swiper', {
+// const swiper = new Swiper('.hero-slider-1', {
 //   slidesPerView: 1,
 //   centeredSlides: true,
 //   slidesPerColumn: 1,

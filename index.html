@@ -6,18 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard — художественная галерея</title>
+  <link rel="prelaod" href="/fonts/OpenSansRegular.woff2" as="font">
+  <link rel="prelaod" href="/fonts/OpenSansLight.woff2" as="font">
+  <link rel="prelaod" href="/fonts/OpenSansItalic.woff2" as="font">
+  <link rel="prelaod" href="/fonts/OpenSansSemiBold.woff2" as="font">
+  <link rel="prelaod" href="/fonts/OpenSans-ExtraBold.woff2" as="font">
+  <link rel="prelaod" href="/fonts/OpenSansBold.woff2" as="font">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
   <header class="header">
     <div class="header__top">
       <div class="header__container container">
-        <button class="header__burger btn-reset">
+        <button class="header__burger btn-reset" aria-label="burger-menu">
           <span class="header__burger-span"></span>
         </button>
         <a class="logo header__logo">
@@ -29,8 +34,8 @@
         <nav class="nav header__nav-top">
           <ul class="nav__list-top list-reset">
             <li class="nav__item-top"><a href="#" class="nav__link-top">О&nbsp;нас</a></li>
-            <li class="nav__item-top"><a href="#" class="nav__link-top">Галерея</a></li>
-            <li class="nav__item-top"><a href="#" class="nav__link-top">Каталог</a></li>
+            <li class="nav__item-top"><a href="#gallery" class="nav__link-top">Галерея</a></li>
+            <li class="nav__item-top"><a href="#catalog" class="nav__link-top">Каталог</a></li>
             <li class="nav__item-top"><a href="#" class="nav__link-top">События</a></li>
             <li class="nav__item-top"><a href="#" class="nav__link-top">Издания</a></li>
             <li class="nav__item-top"><a href="#" class="nav__link-top">Проекты</a></li>
@@ -118,7 +123,19 @@
       <div class="swiper-container hero__swiper">
         <div class="hero__container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide hero-slider">
+            <div class="swiper-slide hero-slider-1">
+              <h1 class="hero__title">
+                Прикоснитесь к&nbsp;прекрасному
+              </h1>
+              <p class="hero__descr">
+                Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
+                предпосылки для
+                новых предложений.
+              </p>
+              <a href="#" class="hero__btn" role="button" aria-label="Подписаться на рассылку">Подписаться
+                на&nbsp;рассылку</a>
+            </div>
+            <div class="swiper-slide hero-slider-2">
               <h1 class="hero__title">
                 Прикоснитесь к&nbsp;прекрасному
               </h1>
@@ -137,7 +154,7 @@
 
     <!-- about -->
 
-    <section class="about">
+    <section id="about"  class="about">
       <div class="about__us">
         <div class="container">
           <h2 class="about__title">
@@ -160,7 +177,7 @@
 
     <!-- gallery -->
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <div class="container gallery-container">
         <div class="gallery__left">
           <div class="gallery__up-box">
@@ -184,9 +201,12 @@
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next"></div>
             </div>
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper swiper-block">
               <div class="gallery-slide  swiper-slide">
-                <img class="img-slide" src="img/gl-slide-23.webp" srcset="img/gl-slide-23.webp" alt="Картинка слайда">
+                <img class="img-slide"  srcset="img/gl-slide-23.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                                350px"
+                                        src="img/gl-slide-23.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide  swiper-slide">
                 <img class="img-slide" src="img/gl-slide-21.webp" srcset="img/gl-slide-21.webp" alt="Картинка слайда">
@@ -195,77 +215,140 @@
                 <img class="img-slide" src="img/gl-slide-24.webp" srcset="img/gl-slide-24.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide  swiper-slide">
-                <img class="img-slide" src="img/gl-slide-1.webp" srcset="img/gl-slide-1.webp" alt="Картинка слайда">
+                  <img class="img-slide" srcset="img/gl-slide-1.webp 350w"
+                                         sizes="(max-width: 1024px) 280px,
+                                                350px"
+                                         src="img/gl-slide-1.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-4.webp" srcset="img/gl-slide-4.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-4.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-4.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-2.webp" srcset="img/gl-slide-2.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-2.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-2.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-5.webp" srcset="img/gl-slide-5.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-5.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-5.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-3.webp" srcset="img/gl-slide-3.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-3.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-3.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-6.webp" srcset="img/gl-slide-6.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-6.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-6.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-7.webp" srcset="img/gl-slide-7.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-7.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-7.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-10.webp" srcset="img/gl-slide-10.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-10.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-10.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img src="img/gl-slide-8.webp" srcset="img/gl-slide-8.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-8.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-8.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-11.webp" srcset="img/gl-slide-11.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-11.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-11.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img src="img/gl-slide-9.webp" srcset="img/gl-slide-9.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-9.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-9.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-12.webp" srcset="img/gl-slide-12.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-12.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-12.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-13.webp" srcset="img/gl-slide-13.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-13.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-13.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-16.webp" srcset="img/gl-slide-16.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-16.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-16.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-14.webp" srcset="img/gl-slide-14.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-14.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-14.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-17.webp" srcset="img/gl-slide-17.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-17.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-17.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-15.webp" srcset="img/gl-slide-15.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-15.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-15.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-18.webp" srcset="img/gl-slide-18.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-18.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-18.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-25.webp" srcset="img/gl-slide-25.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-25.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-25.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-22.webp" srcset="img/gl-slide-22.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-22.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-22.webp" alt="Картинка слайда">
               </div>
               <div class="gallery-slide swiper-slide">
-                <img class="img-slide" src="img/gl-slide-20.webp" srcset="img/gl-slide-20.webp" alt="Картинка слайда">
+                <img class="img-slide" srcset="img/gl-slide-20.webp 350w"
+                                        sizes="(max-width: 1024px) 280px,
+                                              350px"
+                                        src="img/gl-slide-20.webp" alt="Картинка слайда">
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="catalog">
+    <section  id="catalog" class="catalog">
       <div class="container container-catalog">
         <div class="catalog__wrapper">
-          <h2 class="gatalog__title">Каталог</h2>
+          <h2 class="catalog__title">Каталог</h2>
           <ul class="catalog__list-tab list-reset">
             <li class="catalog__item-tab">
               <button class="catalog__link-tab btn-reset" data-path="one">
@@ -301,7 +384,7 @@
           день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
         </p>
         <div class="catalog__content">
-          <div class="catalog__left" data-target="one">
+          <div class="catalog__left catalog__left-active" data-target="one">
             <img src="img/catalog-img-left.webp" alt="Изоброжение автора" class="catalog__left-img">
             <h3 class="catalog__left-title">Доменико Гирландайо</h3>
             <p class="catalog__left-descr">
@@ -315,6 +398,22 @@
               выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
             </p>
           </div>
+          <div class="catalog__left" data-target="two">
+            <img src="img/catalog-img-left-none.webp" alt="картинка пустая">
+            <h4 class="catalog__subtitle-new">Что мы&nbsp;о&nbsp;нём знаем?</h4>
+            <p class="catalog__descr-new">
+              Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
+            </p>
+            <a href="#gallery" class="catalog__link-new">В&nbsp;галерею</a>
+          </div>
+          <div class="catalog__left" data-target="three">
+            <img src="img/catalog-img-left-none.webp" alt="картинка пустая">
+            <h4 class="catalog__subtitle-new">Что мы&nbsp;о&nbsp;нём знаем?</h4>
+            <p class="catalog__descr-new">
+              Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
+            </p>
+            <a href="#gallery" class="catalog__link-new">В&nbsp;галерею</a>
+          </div>
           <div class="catalog__right">
             <ul id="accordion" class="catalog__right-list">
               <li class="catalog__right-item">
@@ -326,38 +425,59 @@
                   <ul class="list-reset catalog__list-right">
                     <li class="catalog__item-right">
                       <ul class="list-reset">
-                        <li><a class="catalog__link-right">Бенедетто ди Биндо</a></li>
-                        <li><a class="catalog__link-right">Бергоньоне, Амброджо</a></li>
-                        <li><a class="catalog__link-right">Биссоло, Франческо</a></li>
-                        <li><a class="catalog__link-right">Больтраффио, Джованни</a></li>
-                        <li><a class="catalog__link-right">Бонсиньори, Франческо</a></li>
-                        <li><a class="catalog__link-right">Боттичини, Рафаэлло</a></li>
-                        <li><a class="catalog__link-right">Брамантино&nbsp;</a></li>
-                        <li><a class="catalog__link-right">Бреа, Людовико</a></li>
-                        <li><a class="catalog__link-right">Бьяджо д’Антонио Туччи</a></li>
+                        <li>
+                          <button class="btn-reset catalog__link-right" data-path="one">Бенедетто ди Биндо</button>
+                        </li>
+                        <li>
+                          <button class="btn-reset catalog__link-right" data-path="two">Бергоньоне, Амброджо</button>
+                        </li>
+                        <li>
+                          <button class="btn-reset catalog__link-right" data-path="three">Биссоло, Франческо</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Больтраффио,
+                            Джованни</button></li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Бонсиньори,
+                            Франческо</button></li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Боттичини, Рафаэлло</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Брамантино&nbsp;</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Бреа, Людовико</button></li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Бьяджо д’Антонио
+                            Туччи</button></li>
                       </ul>
                     </li>
                     <li class="catalog__item-right">
                       <ul class="list-reset">
-                        <li><a class="catalog__link-right">Веккьетта</a></li>
-                        <li><a class="catalog__link-right">Андреа Верроккьо</a></li>
-                        <li><a class="catalog__link-right">Доменико Гирландайо</a></li>
-                        <li><a class="catalog__link-right">Беноццо Гоццоли</a></li>
-                        <li><a class="catalog__link-right">Граначчи, Франческо</a></li>
-                        <li><a class="catalog__link-right">Грегорио ди Чекко</a></li>
-                        <li><a class="catalog__link-right">Джованни да Удине</a></li>
-                        <li><a class="catalog__link-right">Джованни ди Паоло</a></li>
-                        <li><a class="catalog__link-right">Джорджоне</a></li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Веккьетта</button></li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Андреа Верроккьо</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Доменико Гирландайо</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Беноццо Гоццоли</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Граначчи, Франческо</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Грегорио ди Чекко</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Джованни да Удине</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Джованни ди Паоло</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Джорджоне</button></li>
                       </ul>
                     </li>
                     <li class="catalog__item-right">
                       <ul class="list-reset">
-                        <li><a class="catalog__link-right">Парентино, Бернардо</a></li>
-                        <li><a class="catalog__link-right">Пезеллино</a></li>
-                        <li><a class="catalog__link-right">Пьетро Перуджино</a></li>
-                        <li><a class="catalog__link-right">Перуцци, Бальдассаре</a></li>
-                        <li><a class="catalog__link-right">Пизанелло</a></li>
-                        <li><a class="catalog__link-right">Пинтуриккьо</a></li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Парентино, Бернардо</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Пезеллино</button></li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Пьетро Перуджино</button>
+                        </li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Перуцци,
+                            Бальдассаре</button></li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Пизанелло</button></li>
+                        <li><button class="btn-reset catalog__link-right" data-path="three">Пинтуриккьо</button></li>
                       </ul>
                     </li>
                   </ul>
@@ -369,13 +489,15 @@
                   <span class="button-accordion" role="button"></span>
                 </div>
                 <div class="catalog__right-wrapper">
-                  <img src="img/none.webp" alt="Пустая картинка">
+                  <div class="catalog__none-img">
+                    <img src="img/none.webp" alt="Картинки нет" class="square">
+                  </div>
                   <div class="catalog__right-descr">
                     <h4 class="catalog__right-subtitle">Здесь пока пусто</h4>
                     <p class="catalog__right-text">
-                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для
-                      <a href="#" class="catalog__right-link">В&nbsp;галерею</a>
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                     </p>
+                    <a href="#gallery" class="catalog__link-new">В&nbsp;галерею</a>
                   </div>
                 </div>
               </li>
@@ -384,45 +506,90 @@
                   <h3 class="catalog__right-title">C&nbsp;1600 по&nbsp;1699&nbsp;гг.</h3>
                   <span class="button-accordion" role="button"></span>
                 </div>
-                <p class="catalog__right-descr">
-                  Здесь пока пусто
-                </p>
+                <div class="catalog__right-wrapper">
+                  <div class="catalog__none-img">
+                    <img src="img/none.webp" alt="Картинки нет" class="square">
+                  </div>
+                  <div class="catalog__right-descr">
+                    <h4 class="catalog__right-subtitle">Здесь пока пусто</h4>
+                    <p class="catalog__right-text">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="catalog__link-new">В&nbsp;галерею</a>
+                  </div>
+                </div>
               </li>
               <li class="catalog__right-item">
                 <div>
                   <h3 class="catalog__right-title">C&nbsp;1700 по&nbsp;1799&nbsp;гг.</h3>
                   <span class="button-accordion" role="button"></span>
                 </div>
-                <p class="catalog__right-descr">
-                  Здесь пока пусто
-                </p>
+                <div class="catalog__right-wrapper">
+                  <div class="catalog__none-img">
+                    <img src="img/none.webp" alt="Картинки нет" class="square">
+                  </div>
+                  <div class="catalog__right-descr">
+                    <h4 class="catalog__right-subtitle">Здесь пока пусто</h4>
+                    <p class="catalog__right-text">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="catalog__link-new">В&nbsp;галерею</a>
+                  </div>
+                </div>
               </li>
               <li class="catalog__right-item">
                 <div>
                   <h3 class="catalog__right-title">C&nbsp;1800 по&nbsp;1899&nbsp;гг.</h3>
                   <span class="button-accordion" role="button"></span>
                 </div>
-                <p class="catalog__right-descr">
-                  Здесь пока пусто
-                </p>
+                <div class="catalog__right-wrapper">
+                  <div class="catalog__none-img">
+                    <img src="img/none.webp" alt="Картинки нет" class="square">
+                  </div>
+                  <div class="catalog__right-descr">
+                    <h4 class="catalog__right-subtitle">Здесь пока пусто</h4>
+                    <p class="catalog__right-text">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="catalog__link-new">В&nbsp;галерею</a>
+                  </div>
+                </div>
               </li>
               <li class="catalog__right-item">
                 <div>
                   <h3 class="catalog__right-title">C&nbsp;1900 по&nbsp;1999&nbsp;гг.</h3>
                   <span class="button-accordion" role="button"></span>
                 </div>
-                <p class="catalog__right-descr">
-                  Здесь пока пусто
-                </p>
+                <div class="catalog__right-wrapper">
+                  <div class="catalog__none-img">
+                    <img src="img/none.webp" alt="Картинки нет" class="square">
+                  </div>
+                  <div class="catalog__right-descr">
+                    <h4 class="catalog__right-subtitle">Здесь пока пусто</h4>
+                    <p class="catalog__right-text">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="catalog__link-new">В&nbsp;галерею</a>
+                  </div>
+                </div>
               </li>
               <li class="catalog__right-item">
                 <div>
                   <h3 class="catalog__right-title">C&nbsp;2000&nbsp;г.</h3>
                   <span class="button-accordion" role="button"></span>
                 </div>
-                <p class="catalog__right-descr">
-                  Здесь пока пусто
-                </p>
+                <div class="catalog__right-wrapper">
+                  <div class="catalog__none-img">
+                    <img src="img/none.webp" alt="Картинки нет" class="square">
+                  </div>
+                  <div class="catalog__right-descr">
+                    <h4 class="catalog__right-subtitle">Здесь пока пусто</h4>
+                    <p class="catalog__right-text">
+                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="catalog__link-new">В&nbsp;галерею</a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -441,6 +608,7 @@
   <script src="js/swiper-gellary.js"></script>
   <script src="js/accordion-catalog.js"></script>
   <script src="js/gallery-tabs.js"></script>
+  <script src="js/catalog__left-new.js"></script>
 </body>
 
 </html>

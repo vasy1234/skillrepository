@@ -20,27 +20,39 @@ const swiper = new Swiper(".gswiper", {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20
     },
     // when window width is >= 640px
     640: {
-      slidesPerView: 2,
-      spaceBetween: 40
+      slidesPerView: 1,
+      spaceBetween: 20
     },
 
+    1024: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 34
+    },
+    1330: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 34
+    },
     1620: {
-      slidesPerView: 3,
-      spaceBetween: 40
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 34
     },
     1920: {
       slidesPerView: 3,
-      spaceBetween: 50
+      slidesPerColumn: 2,
+      spaceBetween: 70
     }
   }
 });
