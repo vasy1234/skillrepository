@@ -37,22 +37,32 @@ const swiper = new Swiper(".gswiper", {
     1024: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 34
+      spaceBetween: 30
+    },
+    1120: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 30
     },
     1330: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 34
+      spaceBetween: 40
+    },
+    1440: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 30
     },
     1620: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 34
+      spaceBetween: 40
     },
     1920: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 70
+      spaceBetween: 50
     }
   }
 });
