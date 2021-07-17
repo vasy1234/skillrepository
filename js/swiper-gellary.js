@@ -37,7 +37,7 @@ const swiper = new Swiper(".gswiper", {
     1024: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 30
+      spaceBetween: 20
     },
     1120: {
       slidesPerView: 2,

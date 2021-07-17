@@ -1165,13 +1165,11 @@ body {
 
 .catalog__none-img {
   width: 275px;
+  height: fit-content;
   margin-right: 24px;
+  padding: 10px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
-  align-content: stretch;
   background: transparent;
   border: 2px solid #B7B7B7;
   box-sizing: border-box;
@@ -1417,6 +1415,17 @@ body {
       }
       .gallery__left {
         width: 33%;
+      }
+      .gswiper {
+        width: 760px;
+        max-width: 760px;
+        height: 675px;
+      }
+      .gallery-slide {
+        max-width: 280px;
+      }
+      .catalog__right-title {
+        width: 90%;
       }
     }
     @media (max-width: 994px) {
