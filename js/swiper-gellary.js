@@ -21,38 +21,40 @@ const swiper = new Swiper(".gswiper", {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 20
+      slidesPerColumn: 1,
+      spaceBetween: 34
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 1,
-      spaceBetween: 20
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 34
     },
     // when window width is >= 640px
     640: {
-      slidesPerView: 1,
-      spaceBetween: 20
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 34
     },
-
     1024: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 20
+      spaceBetween: 34
     },
     1120: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 30
+      spaceBetween: 34
     },
     1330: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 40
+      spaceBetween: 34
     },
     1440: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 30
+      spaceBetween: 34
     },
     1620: {
       slidesPerView: 2,

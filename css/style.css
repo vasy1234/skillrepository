@@ -788,7 +788,7 @@ body {
 
 .gallery__link {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 32px;
   color: var(--color-Heliotrope);
 }
@@ -1248,12 +1248,20 @@ body {
     .dropdown:not(:last-child) {
       margin-right: 15px;
     }
+    /* about */
+    .about__us {
+      padding-left: 65px;
+    }
     /* gallery */
     .gswiper {
-      max-width: 800px;
+      max-width: 700px;
+      padding-left: 30px;
+    }
+    .gallery-slide {
+      max-width: 280px;
     }
     .gallery__acc-title {
-      padding: 3px 270px 5px 15px
+      padding: 3px 243px 5px 15px;
     }
     .gallery__decr {
       width: 99%;
@@ -1410,22 +1418,60 @@ body {
         width: 97%;
       }
       /* gallery */
+      .gallery__sw {
+        max-width: 100%;
+      }
       .prev-wrapper {
-        padding-left: 36px;
+        padding-left: 2px;
+        padding-bottom: 26px;
       }
       .gallery__left {
         width: 33%;
+        padding-left: 50px;
+        /* margin-right: 10px; */
+      }
+      .gallery__acc-title {
+        padding: 3px 264px 5px 15px;
+      }
+      .gallery__decr {
+        width: 100%;
       }
       .gswiper {
-        width: 760px;
-        max-width: 760px;
-        height: 675px;
+        max-width: 700px;
       }
-      .gallery-slide {
-        max-width: 280px;
+      /* catalog */
+      .container-catalog {
+        padding-left: 49px;
+      }
+      .catalog__title {
+        padding-top: 13px;
+      }
+      .catalog__list-tab {
+        padding-top: 34px;
+      }
+      .catalog__descr {
+        width: 99%;
+        margin: 0;
+        padding-top: 5px;
+        padding-bottom: 20px;
+      }
+      /* catalog right */
+      .catalog-none {
+        display: none;
+      }
+      .catalog__right-item {
+        padding-right: 34px;
       }
       .catalog__right-title {
         width: 90%;
+      }
+      .catalog__right-list {
+        padding-top: 20px;
+        padding-left: 37px;
+        margin: 0;
+      }
+      .button-accordion {
+        right: 34px;
       }
     }
     @media (max-width: 994px) {
