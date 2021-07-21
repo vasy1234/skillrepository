@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.header-search__link').addEventListener('click', function () {
-    document.querySelector('.header-search__input').classList.toggle('search--up')
-    // document.querySelector('.header__burger').classList.toggle('open-menu')
-    // document.querySelector('.header__btn').classList.toggle('open-menu')
-    // document.querySelector('body').classList.toggle('fixed-page')
+  document.querySelector('.header__search').addEventListener('click', function () {
+    document.querySelector('.header-search__input').classList.toggle('active-form')
+    document.querySelector('.header__container').classList.toggle('header-none')
+    document.querySelector('.header__logo').classList.toggle('header__logo-none')
+    document.querySelector('.header__search').classList.toggle('header__search-active')
   })
 })

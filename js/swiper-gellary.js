@@ -1,7 +1,7 @@
 const swiper = new Swiper(".gswiper", {
-  slidesPerView: 3,
-  slidesPerColumn: 2,
-  spaceBetween: 50,
+  // slidesPerView: 3,
+  // slidesPerColumn: 2,
+  // spaceBetween: 50,
   a11y: {
     prevSlideMessage: 'Previous slide',
     nextSlideMessage: 'Next slide',
@@ -18,26 +18,29 @@ const swiper = new Swiper(".gswiper", {
   },
   loop: true,
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       slidesPerColumn: 1,
       spaceBetween: 34
     },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2,
-      slidesPerColumn: 2,
-      spaceBetween: 34
-    },
-    // when window width is >= 640px
     640: {
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 34
     },
-    1024: {
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 2.06,
+      slidesPerColumn: 2,
+      spaceBetween: 30
+    },
+    994: {
       slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 34
+    },
+    1024: {
+      slidesPerView: 2.1,
       slidesPerColumn: 2,
       spaceBetween: 34
     },
@@ -62,9 +65,9 @@ const swiper = new Swiper(".gswiper", {
       spaceBetween: 40
     },
     1920: {
-      slidesPerView: 3,
+      slidesPerView: 3.1,
       slidesPerColumn: 2,
-      spaceBetween: 50
+      spaceBetween: 48
     }
   }
 });
