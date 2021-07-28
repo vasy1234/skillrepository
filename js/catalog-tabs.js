@@ -1,11 +1,11 @@
 window.addEventListener('DOMContentLoaded', function () {
 
-  document.querySelectorAll('.catalog__link-tab').forEach(function (tabsBtn) {
+  document.querySelectorAll('.catalog__item-tab').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
 
       const path = event.currentTarget.dataset.path
 
-      document.querySelectorAll('.catalog__link-tab').forEach(function (tab) {
+      document.querySelectorAll('.catalog__item-tab').forEach(function (tab) {
         tab.classList.remove('catalog__icon-active')
       })
       // document.querySelectorAll('.catalog__left').forEach(function (tabContent) {

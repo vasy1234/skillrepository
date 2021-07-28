@@ -19,55 +19,64 @@ const swiper = new Swiper(".gswiper", {
   loop: true,
   breakpoints: {
     320: {
+      slidesPerGroup: 2,
       slidesPerView: 1,
       slidesPerColumn: 1,
       spaceBetween: 34
     },
     640: {
+      slidesPerGroup: 4,
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 34
     },
     // when window width is >= 640px
     768: {
+      slidesPerGroup: 4,
       slidesPerView: 2.06,
       slidesPerColumn: 2,
       spaceBetween: 30
     },
     994: {
+      slidesPerGroup: 4,
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 34
     },
     1024: {
+      slidesPerGroup: 4,
       slidesPerView: 2.1,
       slidesPerColumn: 2,
       spaceBetween: 34
     },
     1120: {
+      slidesPerGroup: 4,
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 34
     },
     1330: {
+      slidesPerGroup: 4,
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 34
     },
     1440: {
-      slidesPerView: 2,
+      slidesPerGroup: 4,
       slidesPerColumn: 2,
       spaceBetween: 34
     },
     1620: {
+      slidesPerGroup: 4,
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 40
     },
     1920: {
-      slidesPerView: 3.1,
+      slidesPerGroup: 6,
+      slidesPerView: 3.08,
       slidesPerColumn: 2,
-      spaceBetween: 48
+      spaceBetween: 50
     }
   }
 });

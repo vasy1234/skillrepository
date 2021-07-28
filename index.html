@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard — художественная галерея</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/normalize.css">
@@ -21,7 +22,7 @@
         </button>
         <a class="logo header__logo">
           <picture>
-            <source srcset="img/logo-187.png" media="(max-width: 1920px)">
+            <source srcset="img/logo-187.png">
             <img src="img/logo-173.png" alt="Логотип компании Бланчард">
           </picture>
         </a>
@@ -97,7 +98,7 @@
             </ul>
           </div>
         </nav>
-        <div class="header__search">
+        <form class="header__search">
           <a href="#" id="header-search__link" class="header-search__link">
             <picture>
               <source srcset="img/Search-29.svg">
@@ -105,7 +106,7 @@
             </picture>
           </a>
           <input class="header-search__input input__reset" placeholder="Поиск по&nbsp;сайту">
-        </div>
+        </form>
       </div>
     </div>
   </header>
@@ -115,21 +116,9 @@
   <main>
     <section class="hero">
       <div class="swiper-container hero__swiper">
-        <div class="hero__container">
+        <div class="hero__container container">
           <div class="swiper-wrapper">
             <div class="swiper-slide hero-slider-1">
-              <h1 class="hero__title">
-                Прикоснитесь к&nbsp;прекрасному
-              </h1>
-              <p class="hero__descr">
-                Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
-                предпосылки для
-                новых предложений.
-              </p>
-              <a href="#" class="hero__btn" role="button" aria-label="Подписаться на рассылку">Подписаться
-                на&nbsp;рассылку</a>
-            </div>
-            <div class="swiper-slide hero-slider-2">
               <h1 class="hero__title">
                 Прикоснитесь к&nbsp;прекрасному
               </h1>
@@ -177,7 +166,10 @@
           <div class="gallery__up-box">
             <h2 class="gallery__title">Галерея</h2>
             <h3 class="gallery__subtitle">Фильтр:</h3>
-            <h4 class="gallery__acc-title">Живопись<span class="arrow gallery-arrow"></span></h4>
+            <div class="choices-select">
+              <div class="gallery__acc-title">Живопись<span class="arrow gallery-arrow" role="img"
+                  aria-label="Стрелка"></span></div>
+            </div>
           </div>
           <p class="gallery__decr">
             Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#"
@@ -279,30 +271,20 @@
         <div class="catalog__wrapper">
           <h2 class="catalog__title">Каталог</h2>
           <ul class="catalog__list-tab list-reset">
-            <li class="catalog__item-tab">
-              <button class="catalog__link-tab btn-reset" data-path="one">
-                <img class="catalog__icon" src="img/catalog-link-1.webp" alt="Картинка выбора языка">
-              </button>
+            <li class="catalog__item-tab" data-path="one">
+              <button class="catalog__link-tab btn-reset catalog__icon-1"></button>
             </li>
-            <li class="catalog__item-tab">
-              <button class="catalog__link-tab btn-reset" data-path="two">
-                <img class="catalog__icon" src="img/catalog-link-2.webp" alt="Картинка выбора языка">
-              </button>
+            <li class="catalog__item-tab" data-path="two">
+              <button class="catalog__link-tab btn-reset catalog__icon-2"></button>
             </li>
-            <li class="catalog__item-tab">
-              <button class="catalog__link-tab btn-reset" data-path="three">
-                <img class="catalog__icon" src="img/catalog-link-3.webp" alt="Картинка выбора языка">
-              </button>
+            <li class="catalog__item-tab catalog__icon-active" data-path="three">
+              <button class="catalog__link-tab btn-reset catalog__icon-3"></button>
             </li>
-            <li class="catalog__item-tab">
-              <button class="catalog__link-tab btn-reset" data-path="four">
-                <img class="catalog__icon" src="img/catalog-link-4.webp" alt="Картинка выбора языка">
-              </button>
+            <li class="catalog__item-tab" data-path="four">
+              <button class="catalog__link-tab btn-reset catalog__icon-4"></button>
             </li>
-            <li class="catalog__item-tab">
-              <button class="catalog__link-tab btn-reset" data-path="five">
-                <img class="catalog__icon" src="img/catalog-link-5.webp" alt="Картинка выбора языка">
-              </button>
+            <li class="catalog__item-tab" data-path="five">
+              <button class="catalog__link-tab btn-reset catalog__icon-5"></button>
             </li>
           </ul>
         </div>
@@ -564,13 +546,15 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+  <script src="js/choices.js"></script>
   <script src="js/swiper-hero.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/search--up.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/swiper-gellary.js"></script>
   <script src="js/accordion-catalog.js"></script>
-  <script src="js/gallery-tabs.js"></script>
+  <script src="js/catalog-tabs.js"></script>
   <script src="js/catalog__left-new.js"></script>
 </body>
 
